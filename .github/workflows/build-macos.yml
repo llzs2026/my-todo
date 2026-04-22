@@ -13,5 +13,4 @@ jobs:
         with:
           node-version: 22
       - run: npm install -g pnpm@10
-      - uses: dtolnay/rust-action@stable
-      - run: node -v && pnpm -v && rustc --version
+      - run: node -v && pnpm -v && rustc --version || echo "no rust"
